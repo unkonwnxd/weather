@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--BEGIN HEAD-->
+<head>
+  <title>Weather Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/b401ccb608.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+</head>
+<!--BEGIN BODY-->
+<body>
+  <div id="container-fluid" img src="assets/gradient.jpg">
+    <div class="row content">
+      <!--Begin Side Nav-->
+      <div class="col-sm-3 sidenav"> 
+        <ul class="nav nav-pills nav-stacked">
+          <p id="forecast"><b>Tomorrow's Forecast</b></p>
+          
+          <!--Temperature Button-->
+          <div class="temp"><button type="button" class="btn btn-outline" id="temperature">Temperature<i class="far fa-temperature-high"></i></button>
+          </div>  
+          
+          <!--Humidity Button-->
+          <div class="humidity"><button type="button" class="btn btn-outline" id="hot-tub">Humidity<i class="far fa-hot-tub"></i></button></div>        
+          
+          <!--Windspeed Button-->
+          <div class="windspeed"><button type="button" class="btn btn-outline" 
+            id="kite">Windspeed<i class="far fa-kite"></i></button></div>    
+            
+            <!--UV Index Button-->
+            <div class="uv-index"></div><button type="button" class="btn btn-outline" id="sunglasses">UV Index<i class="fal fa-sunglasses"></i></button></div>
+          </ul>
+          
+          <!--Begin Dashboard-->
+          <div class="col-sm-9">
+            <h1>Weather Dashboard</h1>
+            <div id="results">          
+              
+              <button type="button" class="btn btn-outline" id="values">
+                <input id="cityInput" placeholder="Search for your city"/><i class="fas fa-search-location"></i>
+              </button>
+            </div>
+            <br><br>
+            <span class="float-right"><img src = "assets/beach.png" id="beach"></span>  
+          </div>  
+        </div>   
+        <!--Begin Cards-->
+        <div>
+          <h2><b>Five-Day Forecast</b></h2>
+          <br><br>
+          
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <h3><b>Day <span class="day"> 1</span></b></h3>
+                <b><p class="description" id="description-day-1"></p></b>
+                <div><p><b>Temp (°F): </b></p><p id="temp-day-1"></p></div>
+                <div><p><b>Humidity: </b></p><p id="humidity-day-1"></p></div>
+                <div><p><b>Windspeed: </b></p><p id="windspeed-day-1"></p></div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <h3><b>Day <span class="day"> 2</span></b></h3>
+                <b><p class="description" id="description-day-2"></p></b>
+                <div><p><b>Temp (°F): </b></p><p id="temp-day-2"></p></div>
+                <div><p><b>Humidity: </b></p><p id="humidity-day-2"></p></div>
+                <div><p><b>Windspeed: </b></p><p id="windspeed-day-2"></p></div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <h3><b>Day <span class="day"> 3</span></b></h3>
+                <b><p class="description" id="description-day-3"></p></b>
+                <div><p><b>Temp (°F): </b></p><p id="temp-day-3"></p></div>
+                <div><p><b>Humidity: </b></p><p id="humidity-day-3"></p></div>
+                <div><p><b>Windspeed: </b></p><p id="windspeed-day-3"></p></div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <h3><b>Day <span class="day"> 4</span></b></h3>
+                <b><p class="description" id="description-day-4"></p></b>
+                <div><p><b>Temp (°F): </b></p><p id="temp-day-4"></p></div>
+                <div><p><b>Humidity: </b></p><p id="humidity-day-4"></p></div>
+                <div><p><b>Windspeed: </b></p><p id="windspeed-day-4"></p></div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <h3><b>Day <span class="day"> 5</span></b></h3>
+                <b><p class="description" id="description-day-5"></p></b>
+                <div><p><b>Temp (°F): </b></p><p id="temp-day-5"></p></div>
+                <div><p><b>Humidity: </b></p><p id="humidity-day-5"></p></div>
+                <div><p><b>Windspeed: </b></p><p id="windspeed-day-5"></p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="assets/ocean-2.png">  
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
+  <script src= "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js" ></script>
+  </html
