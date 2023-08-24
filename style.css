@@ -1,0 +1,211 @@
+body {
+	background: url("/assets/gradient.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+input {
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	border-bottom-style: hidden;
+}
+
+p {
+	text-transform: capitalize;
+	font-size: 2rem;
+	color: #01b7e5;
+	display: inline-block;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding: 0.35em;
+}
+
+h1 {
+	font-family: "Faster One", cursive;
+	font-size: 7rem;
+	color: #fa295a;
+	box-align: center;
+	margin-top: 10%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+h2 {
+	font-size: 4rem;
+	font-family: "Open Sans", sans-serif;
+	color: #013b86;
+}
+
+h3 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 3.5rem;
+	color: #013b86;
+}
+
+div.row {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+div .card {
+	border-radius: 20px;
+	max-width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding-top: 2px;
+	text-align: center;
+}
+
+button.btn.btn-outline {
+	border-radius: 4rem;
+	border-color: #ffffff;
+	padding: 2rem;
+	height: 100%;
+	font-size: 3rem;
+}
+
+span.day {
+	font-family: "Faster One", cursive;
+	font-size: 4rem;
+	color: #013b86;
+}
+
+.column {
+  margin-left: 30px;
+	float: right;
+	width: 13%;
+}
+
+.sidenav {
+	font-family: "Open Sans", sans-serif;
+}
+
+.nav-stacked {
+	padding-left: 30%;
+	padding-top: 35%;
+	padding-bottom: 0%;
+}
+
+.no-outline:focus {
+	outline: none;
+}
+
+.description {
+	font-size: 1.75rem;
+	color: #068ad1;
+}
+
+.fa-temperature-high {
+	color: #02d215;
+}
+
+.fa-hot-tub {
+	color: #01b7e5;
+}
+
+.fa-kite {
+	color: #fb043e;
+}
+
+.fa-sunglasses {
+	color: #fcbe03;
+}
+
+.fa-search {
+	color: #fa295a;
+}
+
+#forecast {
+	font-family: "Open Sans", sans-serif;
+	color: #fb043e;
+	font-size: 3rem;
+	position: relative;
+	margin-top: 25%;
+}
+
+#temperature {
+	background-color: #ffffff;
+	border-color: #02d215;
+	border-radius: 3rem;
+	margin: 1rem;
+	font-size: 2.25rem;
+	color: #02d215;
+	width: 100%;
+	text-indent: 2rem;
+}
+
+#hot-tub {
+	background-color: #ffffff;
+	border-color: #01b7e5;
+	border-radius: 3rem;
+	margin: 1rem;
+	font-size: 2.25rem;
+	color: #01b7e5;
+	width: 100%;
+	text-indent: 2rem;
+}
+
+#kite {
+	background-color: #ffffff;
+	border-color: #fb043e;
+	border-radius: 3rem;
+	margin: 1rem;
+	font-size: 2.25rem;
+	color: #fb043e;
+	width: 100%;
+	text-indent: 2rem;
+}
+
+#sunglasses {
+	background-color: #ffffff;
+	border-color: #f8ba01;
+	border-radius: 3rem;
+	margin: 1rem;
+	font-size: 2.25rem;
+	color: #f8ba01;
+	width: 100%;
+	text-indent: 2rem;
+}
+
+#container-fluid {
+	text-align: center;
+	background: url("/assets/gradient.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 50%;
+	margin: -15px;
+}
+
+#values {
+	background-color: #ffffff;
+	border-color: #fa295a;
+	border-radius: 3rem;
+	margin: 1rem;
+	color: #fa295a;
+	height: 90%;
+	font-size: 3rem;
+}
+
+#beach {
+	width: 55%;
+	float: right;
+	padding-bottom: 5%;
+	padding-top: 7%;
+	padding-right: 10%;
+}
+
+/* BEGIN MEDIA QUERY */
+@media screen and (max-width: 600px) {
+	.column {
+		width: auto;
+		display: block;
+		margin-bottom: 20px;
+	}
+	.sidenav {
+		height: auto;
+		/* margin: 25px; */
+	}
+	.row-content {
+		align-items: baseline;
+	}
+}
